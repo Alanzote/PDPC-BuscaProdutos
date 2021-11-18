@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDPC-BuscaProdutos", "PDPC-BuscaProdutos.csproj", "{836CD528-774F-42DA-A69D-4CDE102ACAAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Administrator|Any CPU = Administrator|Any CPU
+		Client|Any CPU = Client|Any CPU
+		Server|Any CPU = Server|Any CPU
+		Shop|Any CPU = Shop|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{836CD528-774F-42DA-A69D-4CDE102ACAAF}.Administrator|Any CPU.ActiveCfg = Administrator|Any CPU
+		{836CD528-774F-42DA-A69D-4CDE102ACAAF}.Administrator|Any CPU.Build.0 = Administrator|Any CPU
+		{836CD528-774F-42DA-A69D-4CDE102ACAAF}.Client|Any CPU.ActiveCfg = Client|Any CPU
+		{836CD528-774F-42DA-A69D-4CDE102ACAAF}.Client|Any CPU.Build.0 = Client|Any CPU
+		{836CD528-774F-42DA-A69D-4CDE102ACAAF}.Server|Any CPU.ActiveCfg = Server|Any CPU
+		{836CD528-774F-42DA-A69D-4CDE102ACAAF}.Server|Any CPU.Build.0 = Server|Any CPU
+		{836CD528-774F-42DA-A69D-4CDE102ACAAF}.Shop|Any CPU.ActiveCfg = Shop|Any CPU
+		{836CD528-774F-42DA-A69D-4CDE102ACAAF}.Shop|Any CPU.Build.0 = Shop|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE051971-E0AB-4557-B36B-46CB0903FDAF}
+	EndGlobalSection
+EndGlobal

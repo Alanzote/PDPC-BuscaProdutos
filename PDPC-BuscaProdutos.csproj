@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>PDPC_BuscaProdutos</RootNamespace>
+    <Configurations>Client;Server;Administrator;Shop</Configurations>
+    <StartupObject>PDPC_BuscaProdutos.Program</StartupObject>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Server|AnyCPU'">
+    <DefineConstants>TRACE;SERVER</DefineConstants>
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Client|AnyCPU'">
+    <DefineConstants>TRACE;CLIENT</DefineConstants>
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shop|AnyCPU'">
+    <DefineConstants>TRACE;SHOP</DefineConstants>
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Administrator|AnyCPU'">
+    <DefineConstants>TRACE;ADMIN</DefineConstants>
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\LojasAmericanas.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\CasasBahia.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\LojasAmericanas.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\Magalu.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
